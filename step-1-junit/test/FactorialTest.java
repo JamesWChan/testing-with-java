@@ -1,11 +1,17 @@
 import static org.junit.Assert.assertEquals;
+import org.junit.Before;
 import org.junit.Test;
 
 public class FactorialTest {
+    private Factorial factorial;
+
+    @Before
+    public void setUp(){
+    factorial = new Factorial();
+    }
 
     @Test
     public void calculate_0() {
-        Factorial factorial = new Factorial();
         int testStartValue = 0;
         int expectedResult = 0;
 
@@ -14,7 +20,6 @@ public class FactorialTest {
 
     @Test
     public void calculate_1() {
-        Factorial factorial = new Factorial();
         int testStartValue = 1;
         int expectedResult = 1;
 
