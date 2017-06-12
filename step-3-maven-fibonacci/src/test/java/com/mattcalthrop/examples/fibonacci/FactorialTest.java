@@ -1,8 +1,13 @@
+package com.mattcalthrop.examples.fibonacci;
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-public class FibonacciTest {
+/**
+ * Created by Apprentice on 09/06/2017.
+ */
+public class FactorialTest {
     private Fibonacci fibonacci;
 
     @Before
@@ -32,9 +37,5 @@ public class FibonacciTest {
         int expectedResult = 13;
 
         assertEquals(expectedResult, fibonacci.calculate(testIndex));
-    }
-
-    @Test(expected=IllegalArgumentException.class)
-    public void calculate_negative() {fibonacci.calculate(-5);
     }
 }
